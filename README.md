@@ -1,5 +1,5 @@
 # Autotag
-`autotag.sh` is a Bash script for Git auto-tagging. The script adds a [Semmantic Versioning accurate](https://semver.org/) tag after a commit to a Git repository. It also uses the last commit message as the tag message.
+`autotag.sh` is a Bash script for Git auto-tagging. The script adds a [Semmantic Versioning accurate](https://semver.org/) tag after a commit/push to a Git repository. It also uses the last commit message as the tag message.
 
 ## Usage
 
@@ -9,8 +9,13 @@ You need to use it after a `git commit` as follows:
 git commit -m "Some changes"
 ```
 ```bash
+git push
+```
+
+```bash
 ./autotag.sh
 ```
+
 Supposing the script is in you working directory (see below for adding it to the PATH). This will add a tag `v1.0.0` (if there are no tags) or it will add one to the last number i.e. PATCH version (`v1.0.1`, `v1.0.2`, etc).
 
 For upgrading the second number (MINOR version) you need to specify the `-2` flag:
