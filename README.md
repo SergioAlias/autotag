@@ -70,7 +70,7 @@ Now you should be able to run your script from anywhere by simply typing `autota
 
 ### I do NOT have root permissions
 
-If you are working on your institution's machine and they don't want you to have root permissions (it happens all the time), you can do it as follows:
+If you are working on your institution's machine and you don't have root permissions (it happens all the time), you can do it as follows:
 
 1. Create a `bin` directory in your home directory, if it doesn't exist already:
    ```bash
